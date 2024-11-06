@@ -1,0 +1,308 @@
+body{
+    /* color of text out of var */
+    --text-color: #eee7ce;
+    --bg-color:#064439;
+    color: var(--text-color);
+    background: var(--bg-color);
+}
+
+/* Header */
+
+header{
+    width: 100%;
+    height: 70px;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.header__logo{
+    font-size: 30px;
+    color: var(--text-color);
+}
+header ul{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+header ul a{
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 25px;
+}
+.header__time button{
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+}
+header>ul>a:hover{
+    margin-top: -10px;
+    transition: 0.8s;
+}
+#themaObj{
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 25px; 
+}
+#themaObj:hover{
+    margin-top: -10px;
+    transition: 0.8s;
+}
+#themas{
+    /* width: 40%;
+    height: 40%; */
+    border-radius: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 6rem;
+    font-size: 4vh;
+    position: absolute;
+    top: -30%;
+    left: 32%;
+    background: #0000008c;
+    transition: all 2s ease-in-out;
+    z-index: 100;
+}
+#themas > a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+/* Clock */
+
+.clock{
+    position: relative;
+    width: 4%;
+    z-index: 1000;
+    border-radius: 5px solid black;
+    border: 1px solid rgba(255,255,255,0.01);
+}
+.clock .clock__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clock .clock__container h2{
+    font-size: 2em;
+    color: var(--text-color);
+}
+.clock__container span{
+    font-size: 0.7em;
+    margin-top: -10px;
+    margin-left: 5px;
+    color: var(--text-color);
+}
+/* Main */
+
+main {
+    width: 1000px;
+    height: 500px;
+    margin: 0 auto;
+}
+.anima__block1 {
+    width: 600px;
+    height: 600px;
+    opacity: 0.3;
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    animation: rotate1 infinite; 
+    animation-duration: 5s;
+    transform: rotate(300deg);
+      box-shadow: 0 0 .2rem var(--text-color),
+            0 0 .2rem var(--text-color),
+            0 0 2rem var(--text-color),
+            0 0 0.8rem var(--text-color),
+            0 0 2.8rem var(--text-color),
+            inset 0 0 1.3rem var(--text-color);
+}
+.anima__block2 {
+    width: 600px;
+    height: 600px;
+    opacity: 0.3;
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    animation: rotate2 infinite; 
+    animation-duration: 5s;
+    transform: rotate(300deg);
+      box-shadow: 0 0 .2rem var(--text-color),
+            0 0 .2rem var(--text-color),
+            0 0 2rem var(--text-color),
+            0 0 0.8rem var(--text-color),
+            0 0 2.8rem var(--text-color),
+            inset 0 0 1.3rem var(--text-color);
+}
+.anima__block3 {
+    width: 600px;
+    height: 600px;
+    opacity: 0.3;
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    animation: rotate3 infinite; 
+    animation-duration: 5s;
+    transform: rotate(300deg);
+      box-shadow: 0 0 .2rem var(--text-color),
+            0 0 .2rem var(--text-color),
+            0 0 2rem var(--text-color),
+            0 0 0.8rem var(--text-color),
+            0 0 2.8rem var(--text-color),
+            inset 0 0 1.3rem var(--text-color);
+}
+.anima__block4 {
+    width: 600px;
+    height: 600px;
+    opacity: 0.3;
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    animation: rotate4 infinite; 
+    animation-duration: 5s;
+    transform: rotate(300deg);
+      box-shadow: 0 0 .2rem var(--text-color),
+            0 0 .2rem var(--text-color),
+            0 0 2rem var(--text-color),
+            0 0 0.8rem var(--text-color),
+            0 0 2.8rem var(--text-color),
+            inset 0 0 1.3rem var(--text-color);
+}
+.anima__block5 {
+    width: 600px;
+    height: 600px;
+    opacity: 0.3;
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    animation: rotate5 infinite; 
+    animation-duration: 5s;
+    transform: rotate(300deg);
+      box-shadow: 0 0 .2rem var(--text-color),
+            0 0 .2rem var(--text-color),
+            0 0 2rem var(--text-color),
+            0 0 0.8rem var(--text-color),
+            0 0 2.8rem var(--text-color),
+            inset 0 0 1.3rem var(--text-color);
+}
+.anima__block6 {
+    width: 600px;
+    height: 600px;
+    opacity: 0.3;
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    animation: rotate6 infinite; 
+    animation-duration: 5s;
+    transform: rotate(300deg);
+      box-shadow: 0 0 .2rem var(--text-color),
+            0 0 .2rem var(--text-color),
+            0 0 2rem var(--text-color),
+            0 0 0.8rem var(--text-color),
+            0 0 2.8rem var(--text-color),
+            inset 0 0 1.3rem var(--text-color);
+}
+
+@keyframes rotate1 {
+    from{
+        transform: rotate(360deg);
+    }
+}
+@keyframes rotate2 {
+    from{
+        transform: rotate(60deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(60deg);
+    }
+}
+@keyframes rotate3 {
+    from{
+        transform: rotate(120deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(120deg);
+    }
+}
+@keyframes rotate4 {
+    from{
+        transform: rotate(180deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(180deg);
+    }
+}
+@keyframes rotate5 {
+    from{
+        transform: rotate(240deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(240deg);
+    }
+}
+@keyframes rotate6 {
+    from{
+        transform: rotate(300deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(300deg);
+    }
+}
+.input__contact {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    top: 70%;
+}
+.input__Content {
+    width: 350px;
+    height: 50px;
+    border: 0px;
+    background: var(--text-color);
+    color: var(--bg-color);
+    font-size: large;
+    font-weight: bold;
+    border-radius: 15px;
+    margin-top: 20px;
+}   
+/* Footer */
+
+footer{
+    width: 80%;
+    height: 300px;
+    margin: 0 auto;
+    color: var(--text-color);
+    border-radius: 40px;
+    margin-top: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__underClass{
+    margin-top: 20px;
+}
+.footer__blockMiddle{
+
+}

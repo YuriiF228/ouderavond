@@ -1,0 +1,200 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: #064439;
+    --text-color: #eee7ce;
+    color: var(--text-color);
+}
+.hidden {
+    opacity: 50%;
+}
+/* Header */
+
+header{
+    width: 100%;
+    height: 70px;
+    background: #064439;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.header__logo{
+    font-size: 30px;
+    color: #eee7ce ;
+}
+header ul{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+header ul a{
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 25px;
+}
+.header__time button{
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+}
+header>ul>a:hover{
+    margin-top: -10px;
+    transition: 0.8s;
+}
+#themaObj{
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 25px; 
+}
+#themaObj:hover{
+    margin-top: -10px;
+    transition: 0.8s;
+}
+#themas{
+    /* width: 40%;
+    height: 40%; */
+    border-radius: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 6rem;
+    font-size: 4vh;
+    position: absolute;
+    top: -30%;
+    left: 32%;
+    background: #0000008c;
+    transition: all 2s ease-in-out;
+    z-index: 100;
+}
+#themas > a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+
+
+/* Clock */
+
+.clock{
+    position: relative;
+    width: 4%;
+    z-index: 1000;
+    border-radius: 5px solid black;
+    border: 1px solid rgba(255,255,255,0.01);
+}
+.clock .clock__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clock .clock__container h2{
+    font-size: 2em;
+    color: var(--text-color);
+}
+.clock__container span{
+    font-size: 0.7em;
+    margin-top: -10px;
+    margin-left: 5px;
+    color: var(--text-color);
+}
+
+
+
+.conteiner{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.voorstel__One{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+.yurii__Left{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+.yurii__right{
+    width: 40%;
+}
+.yurii__right img{
+    width: 70%;
+    height: 90%;
+}
+.yurii__Left h2{
+    font-size: 25px;
+}  
+.yurii__Left li{
+    list-style-type: square;
+    font-size: 16px;
+}  
+
+/* Voorstel deel */
+
+.voorstel__Two{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 300px;
+}
+.danila__Left {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 100px;
+}
+.danila__right {
+    width: 40%;
+}
+.danila__right img {
+    width: 80%;
+    height: 90%;
+    border-radius: 20px;
+}
+.danila__Left h2 {
+    font-size: 25px;
+}  
+.danila__Left li {
+    list-style-type: square;
+    font-size: 16px;
+}  
+
+/* Footer */
+
+footer{
+    width: 80%;
+    height: 300px;
+    margin: 0 auto;
+    color: var(--text-color);
+    border-radius: 40px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__underClass{
+    margin-top: 20px;
+}
+.footer__blockMiddle{
+
+}

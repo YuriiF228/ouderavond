@@ -1,0 +1,263 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body, html{
+    --bg-color: #064439;
+    --text-color: #eee7ce;
+    color: var(--text-color);
+    background: var(--bg-color);
+}
+
+header{
+    width: 100%;
+    height: 70px;
+    background: #064439;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.header__logo{
+    font-size: 30px;
+    color: var(--text-color) ;
+}
+header ul{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+header ul a{
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 25px;
+}
+.header__time button{
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+}
+header>ul>a:hover{
+    margin-top: -10px;
+    transition: 0.8s;
+}
+#themaObj{
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 25px; 
+}
+#themaObj:hover{
+    margin-top: -10px;
+    transition: 0.8s;
+}
+#themas{
+    /* width: 40%;
+    height: 40%; */
+    border-radius: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 6rem;
+    font-size: 4vh;
+    position: absolute;
+    top: -30%;
+    left: 32%;
+    background: #0000008c;
+    transition: all 2s ease-in-out;
+    z-index: 100;
+}
+#themas > a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+
+.clock{
+    position: relative;
+    width: 4%;
+    z-index: 1000;
+    border-radius: 5px solid black;
+    border: 1px solid rgba(255,255,255,0.01);
+}
+.clock .clock__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clock .clock__container h2{
+    font-size: 2em;
+    color: var(--text-color);
+}
+.clock__container span{
+    font-size: 0.7em;
+    margin-top: -10px;
+    margin-left: 5px;
+    color: #000;
+}
+
+
+
+
+
+/* Footer */
+
+footer{
+    width: 80%;
+    height: 300px;
+    margin: 0 auto;
+    color: var(--text-color);
+    border-radius: 40px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__underClass{
+    margin-top: 20px;
+}
+.footer__blockMiddle{
+
+}
+/* Wrapper */
+
+
+.general-container {
+    display: flex;
+    height: 25rem;
+    margin: 0 auto;
+    width: 60vw;
+    margin-top: 200px;
+  }
+  
+  .radio {
+    display: none;
+  }
+  
+  .content {
+    background: transparent;
+    background-image: url("../images/schiedamseweg.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 3rem;
+    cursor: pointer;
+    flex: 1;
+    margin-right: 0.8rem;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.5s cubic-bezier(0.05, 0.60, 0.39, 0.94);
+  }
+  
+  .content::before {
+    background: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+  }
+  
+  .content > * {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .content:hover {
+    box-shadow: 0.7rem 0.7rem 0.5rem rgba(0, 0, 0, 0.3);
+  }
+  
+  .content:nth-of-type(2) {
+    background: transparent;
+    background-image: url("../images/hal.png");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .content:nth-of-type(3) {
+    background: transparent;
+    background-image: url("../images/kantine.png");
+  background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .content:nth-of-type(4) {
+    background: transparent;
+    background-image: url("../images/klass.png");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .card-title {
+    bottom: 1.2rem;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    left: 1.5rem;
+    line-height: 1.1;
+    opacity: 0;
+    position: absolute;
+    transform: translateX(2rem);
+    transition: 290ms cubic-bezier(0.05, 0.62, 0.40, 0.95) 300ms;
+    transition-property: opacity, transform;
+    user-select: none;
+    white-space: nowrap;
+  }
+  
+  .title-card{
+    top: 2rem;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    left: 1.5rem;
+    line-height: 1.1;
+    opacity: 0;
+    position: absolute;
+    transform: translateX(2rem);
+    transition: 290ms cubic-bezier(0.05, 0.60, 0.42, 0.94) 300ms;
+    transition-property: opacity, transform;
+    user-select: none;
+    white-space: nowrap;
+  
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+  }
+  
+  .subsubtitle{
+    font-size: 0.85rem;
+  }
+  
+  .paddT{
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  
+  .radio:checked + .content {
+    border-radius: 2rem;
+    box-shadow: 0.3rem 0.3rem 0.4rem rgba(0, 0, 0, 0.3);
+    flex: 9;
+  }
+  
+  .radio:checked , .content > .card-title {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .radio:checked , .content > .title-card{
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .marg-bott{
+    margin-bottom: 1.5rem;
+  }
